@@ -2,6 +2,6 @@
 lib LibGit
   fun git_libgit2_init()
   fun git_libgit2_shutdown()
-  fun git_libgit2_version(major: LibC::Int*, minor: LibC::Int*, rev: LibC::Int*)
+  fun libgit2_version = git_libgit2_version(major: LibC::Int*, minor: LibC::Int*, rev: LibC::Int*)
   # C bindings are fun!
 end

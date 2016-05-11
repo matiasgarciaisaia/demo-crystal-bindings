@@ -6,7 +6,7 @@ module Git
   extend self
 
   def version
-    LibGit.git_libgit2_version(out major, out minor, out rev)
+    LibGit.libgit2_version(out major, out minor, out rev)
     [major, minor, rev]
   end
 end
